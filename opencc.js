@@ -1,0 +1,1 @@
+<script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/full.js"></script> // Full version
