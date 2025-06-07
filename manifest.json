@@ -5,7 +5,8 @@
     "permissions": [
         "scripting",
         "clipboardWrite",
-        "clipboardRead"
+        "clipboardRead",
+        "storage"
     ],
     "background": {
         "service_worker": "background.js"
@@ -22,6 +23,7 @@
         }
     ],
     "action": {
-        "default_title": "Simp → Trad Converter"
+        "default_title": "Simp → Trad Converter",
+        "default_popup": "popup.html"
     }
 }
