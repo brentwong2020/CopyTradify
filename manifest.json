@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Simplified to Traditional Clipboard Converter",
+    "name": "Simplified / Traditional Clipboard Converter",
     "version": "1.0",
     "permissions": [
         "scripting",
@@ -17,13 +17,18 @@
                 "<all_urls>"
             ],
             "js": [
+                "constants.js",
+                "dist/opencc/full.js",
                 "content.js"
             ],
             "run_at": "document_idle"
         }
     ],
     "action": {
-        "default_title": "Simp → Trad Converter",
+        "default_title": "Simp / Trad Converter",
         "default_popup": "popup.html"
+    },
+    "icons": {
+        "32": "icon.png"
     }
 }

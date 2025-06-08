@@ -3,25 +3,50 @@
 
 <head>
     <meta charset="UTF-8" />
+    <title>Clipboard Converter</title>
     <style>
         body {
             font-family: sans-serif;
-            margin: 10px;
+            width: 240px;
+            padding: 12px;
+        }
+
+        .section {
+            margin-bottom: 12px;
         }
 
         label {
             display: flex;
             align-items: center;
             gap: 8px;
+            cursor: pointer;
+        }
+
+        .power-icon {
+            width: 16px;
+            height: 16px;
+            background: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3h-2v10h2V3zm5.66 3.34l-1.42 1.42A7.969 7.969 0 0120 12a8 8 0 11-16 0c0-2.21.9-4.21 2.34-5.66l-1.42-1.42A9.969 9.969 0 002 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07z"/></svg>') no-repeat center;
+            background-size: contain;
         }
     </style>
 </head>
 
 <body>
-    <label>
-        <input type="checkbox" id="toggle" />
-        Enable Simp→Trad Conversion
-    </label>
+    <div class="section">
+        <label>
+            <input type="checkbox" id="powerToggle" />
+            <span class="power-icon"></span> Enable Clipboard Translation
+        </label>
+    </div>
+
+    <div class="section">
+        <label>
+            <input type="radio" name="direction" value="cn2hk" /> 簡→繁
+        </label>
+        <label>
+            <input type="radio" name="direction" value="hk2cn" /> 繁→簡
+        </label>
+    </div>
 
     <script src="popup.js"></script>
 </body>
